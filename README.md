@@ -30,9 +30,9 @@ This is H3
     int a = 5
     cout << c 
 
-    <div class="footer">
-    &copy; 2004 Foo Corporation
-    </div>
+<div class="footer">
+&copy; 2004 Foo Corporation
+</div>
     
 * * *
 ***
