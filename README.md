@@ -6,4 +6,4 @@
 
 at&t
 
-&copy
+&copy;
