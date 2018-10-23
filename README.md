@@ -14,13 +14,9 @@
 1. >abc
 >abc
 
-
-
-
-&copy;    
 ----------------------
 
-[hahaha](http://www.sina.com.cn)
+[FATFOO](https://github.com/snowyben/00_notes)
 
 <div class="footer">
 &copy; 2018 FatFoo Corporation
