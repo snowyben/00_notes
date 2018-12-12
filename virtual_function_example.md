@@ -14,7 +14,7 @@
 1. >abc
 2. >abcdef
 
-
+```c++
 #include <iostream>
 #include <string>
 using namespace std;
@@ -65,6 +65,7 @@ pt=&grad1;
 pt->display( );
 return 0;
 }
+```
 
 ----------------------
 
