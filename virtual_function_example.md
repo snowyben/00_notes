@@ -101,9 +101,9 @@ pay=1200
 
 ----------------------
 
+[FATFOO](https://github.com/snowyben)
 
 <div class="footer">
-&copy; 2018 [FatFoo](https://github.com/snowyben) Corporation
+&copy; 2018 FatFoo Corporation
 </div>
 
-[FatFoo]: https://github.com/snowyben
