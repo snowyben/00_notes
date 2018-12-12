@@ -103,7 +103,7 @@ pay=1200
 
 
 <div class="footer">
-&copy; 2018 [FatFoo] Corporation
+&copy; 2018 [FatFoo][FATFOO] Corporation
 </div>
 
 [FATFOO]: https://github.com/snowyben
