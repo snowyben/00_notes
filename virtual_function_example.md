@@ -96,6 +96,7 @@ pay=1200
 ----------------------
 
 [virtual]: http://c.biancheng.net/cpp/biancheng/view/244.html
+
 ----------------------
 
 [FATFOO](https://github.com/snowyben/00_notes)
