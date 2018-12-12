@@ -66,7 +66,7 @@ score:98.5
 ```
 ## Test code 2
 ```
-    ...
+    ...// in base class
     virtual void display(); 
     ...
 ```
