@@ -1,6 +1,6 @@
 # Virtual Function Testcode
 
-For polymorphism feature in C++. If we write virtual function in the following style equaling to zero, it will be a pure virtual function: 
+For polymorphism feature in C++. If we write a virtual function in the following style equaling to zero, it will be a pure virtual function: 
 1. > The base class is not allowed to be instantiated;
 2. > The pure virtual function must be implemented.
 ```c++
@@ -72,7 +72,7 @@ name:Li
 score:87.5
 
 num:2001
-name:wang
+name:Wang
 score:98.5
 ```
 ## Test code 2
@@ -88,7 +88,7 @@ name:Li
 score:87.5
 
 num:2001
-name:wang
+name:Wang
 score:98.5
 pay=1200
 ```
