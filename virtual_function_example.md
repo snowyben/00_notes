@@ -65,7 +65,7 @@ name:wang
 score:98.5
 ```
 ## Test code 2
-```
+```c++
     ...// in base class
     virtual void display(); 
     ...
