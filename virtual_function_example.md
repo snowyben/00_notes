@@ -1,5 +1,16 @@
 # Virtual Function Testcode
 
+For polymorphism feature in C++. If we write virtual function in the following style equaling to zero, it will be a pure virtual function: 
+1. > The base class is not allowed to be instantiated;
+2. > The pure virtual function must be implemented.
+```c++
+    ...//in base class
+    void display()=0;
+    ...
+```
+
+
+
 ## Test code 1
 
 ```c++
@@ -11,7 +22,7 @@ class Student
 {
     public:
     Student(int, string,float);  
-    void display( );
+    void display();
     protected:  //derived class can access
     int num;
     string name;
@@ -24,7 +35,7 @@ Student::Student(int n, string nam,float s)
     name=nam;
     score=s;
 }
-void Student::display( )
+void Student::display()
 {
     cout<<"num:"<<num<<"\nname:"<<name<<"\nscore:"<<score<<"\n\n";
 }
@@ -33,11 +44,11 @@ class Graduate:public Student
 {
     public:
     Graduate(int, string, float, float);
-    void display( );
+    void display();
     private:float pay;
 };
 
-void Graduate::display( )
+void Graduate::display()
 {
     cout<<"num:"<<num<<"\nname:"<<name<<"\nscore:"<<score<<"\npay="<<pay<<endl;
 }
@@ -48,9 +59,9 @@ int main()
     Student stud1(1001,"Li",87.5);
     Graduate grad1(2001,"Wang",98.5,563.5);
     Student *pt=&stud1;
-    pt->display( );
+    pt->display();
     pt=&grad1;
-    pt->display( );
+    pt->display();
     return 0;
 }
 ```
