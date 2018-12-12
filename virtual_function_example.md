@@ -9,6 +9,7 @@ For polymorphism feature in C++. If we write a virtual function in the following
     ...
 ```
 
+**Override** and **Overload** are different. Overrride is used for virtual function.
 
 
 ## Test code 1
