@@ -99,6 +99,7 @@ pay=1200
 ## References
 
 [1] http://c.biancheng.net/cpp/biancheng/view/244.html
+
 [2] https://blog.csdn.net/guoyong10721073/article/details/52414029
 
 ----------------------
