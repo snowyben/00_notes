@@ -1,5 +1,7 @@
 # Virtual Function Testcode
 
+## Test code 1
+
 ```c++
 #include <iostream>
 #include <string>
@@ -52,6 +54,34 @@ int main()
     return 0;
 }
 ```
+## Output 1
+```
+num:1001
+name:Li
+score:87.5
+
+num:2001
+name:wang
+score:98.5
+```
+## Test code 2
+```
+    ...
+    virtual void display(); 
+    ...
+```
+## Output 2
+```
+num:1001
+name:Li
+score:87.5
+
+num:2001
+name:wang
+score:98.5
+pay=1200
+```
+
 
 ----------------------
 
