@@ -39,19 +39,19 @@
    ```bash
    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA300B7755AFCFAE
       
-      # add Typora repository
-      sudo add-apt-repository 'deb https://typora.io/linux ./'
-      sudo apt-get update
+   # add Typora repository
+   sudo add-apt-repository 'deb https://typora.io/linux ./'
+   sudo apt-get update
       
-      # install Typora
-      sudo apt-get install typora
+   # install Typora
+   sudo apt-get install typora
    ```
 
 2. Run
 
    ```bash
    sudo gedit .bashrc   # add: alias typora="/opt/Typora-linux-x64/Typora"
-      source .bashrc       # refresh
+   source .bashrc       # refresh
    ```
 
 ## 3. ToDo
