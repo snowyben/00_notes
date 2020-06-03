@@ -11,7 +11,7 @@
 
 2. Copy:
 
-   ```
+   ```Bash
    deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ eoan main restricted universe multiverse
    
    deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ eoan main restricted universe multiverse
