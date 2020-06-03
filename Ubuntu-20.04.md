@@ -115,9 +115,14 @@
    $ sudo docker run hello-world
    ```
 
-   
 
+7. Usermod
 
+   ```bash
+   $ sudo usermod -aG docker [username]
+   $ sudo systemctl restart docker
+   $ reboot
+   ```
 
 
 
