@@ -4,13 +4,13 @@
 
 1. Terminal:
 
-   ```shell
+   ```bash
    sudo gedit /etc/apt/sources.list
    ```
 
 2. Copy:
 
-   ```
+   ```bash
    deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ eoan main restricted universe multiverse
    
    deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ eoan main restricted universe multiverse
@@ -36,7 +36,7 @@
 
 3. Terminal
 
-   ```shell
+   ```bash
    sudo apt-get update
    sudo apt-get upgrade
    ```
@@ -45,7 +45,7 @@
 
 1. Terminal
 
-   ```shell
+   ```bash
    sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA300B7755AFCFAE
    
    # add Typora repository
@@ -58,7 +58,7 @@
 
 2. Run
 
-   ```shell
+   ```bash
    sudo gedit .bashrc   # add: alias typora="/opt/Typora-linux-x64/Typora"
    source .bashrc       # refresh
    ```
