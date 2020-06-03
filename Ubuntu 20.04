@@ -1,102 +1,79 @@
 # Notes of Ubuntu 20.04
 
-For polymorphism feature in C++. If we write a virtual function in the following style equaling to zero, it will be a pure virtual function: 
-1. > The base class is not allowed to be instantiated;
-2. > The pure virtual function must be implemented.
-```c++
-    ...//in base class
-    void display()=0;
-    ...
-```
+## 1. Source:
 
-**Override** and **Overload** are different. Override is used for virtual function.
+1. Terminal:
+
+   ```shell
+   sudo gedit /etc/apt/sources.list
+   ```
+
+2. Copy:
+
+   ```
+   deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ eoan main restricted universe multiverse
+   
+   deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ eoan main restricted universe multiverse
+   
+   deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ eoan-updates main restricted universe multiverse
+   
+   deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ eoan-updates main restricted universe multiverse
+   
+   deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ eoan-backports main restricted universe multiverse
+   
+   deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ eoan-backports main restricted universe multiverse
+   
+   deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ eoan-security main restricted universe multiverse
+   
+   deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ eoan-security main restricted universe multiverse
+   
+   deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ eoan-proposed main restricted universe multiverse
+   
+   deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ eoan-proposed main restricted universe multiverse
+   deb https://typora.io/linux ./
+   # deb-src https://typora.io/linux ./
+   ```
+
+3. Terminal
+
+   ```shell
+   sudo apt-get update
+   sudo apt-get upgrade
+   ```
+
+## 2. Typora
+
+1. Terminal
+
+   ```shell
+   sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys BA300B7755AFCFAE
+   
+   # add Typora repository
+   sudo add-apt-repository 'deb https://typora.io/linux ./'
+   sudo apt-get update
+   
+   # install Typora
+   sudo apt-get install typora
+   ```
+
+2. Run
+
+   ```shell
+   sudo gedit .bashrc   # add: alias typora="/opt/Typora-linux-x64/Typora"
+   source .bashrc       # refresh
+   ```
+
+## 3. ToDo
 
 
-## Test code 1
 
-```c++
-#include <iostream>
-#include <string>
-using namespace std;
-//base Student
-class Student
-{
-    public:
-    Student(int, string,float);  
-    void display();
-    protected:  //derived class can access
-    int num;
-    string name;
-    float score;
-};
 
-Student::Student(int n, string nam,float s)
-{
-    num=n;
-    name=nam;
-    score=s;
-}
-void Student::display()
-{
-    cout<<"num:"<<num<<"\nname:"<<name<<"\nscore:"<<score<<"\n\n";
-}
 
-class Graduate:public Student
-{
-    public:
-    Graduate(int, string, float, float);
-    void display();
-    private:float pay;
-};
 
-void Graduate::display()
-{
-    cout<<"num:"<<num<<"\nname:"<<name<<"\nscore:"<<score<<"\npay="<<pay<<endl;
-}
-Graduate::Graduate(int n, string nam,float s,float p):Student(n,nam,s),pay(p){}
 
-int main()
-{
-    Student stud1(1001,"Li",87.5);
-    Graduate grad1(2001,"Wang",98.5,563.5);
-    Student *pt=&stud1;
-    pt->display();
-    pt=&grad1;
-    pt->display();
-    return 0;
-}
-```
-## Output 1
-```
-num:1001
-name:Li
-score:87.5
 
-num:2001
-name:Wang
-score:98.5
-```
-## Test code 2
-```c++
-    ...// in base class
-    virtual void display(); 
-    ...
-```
-## Output 2
-```
-num:1001
-name:Li
-score:87.5
 
-num:2001
-name:Wang
-score:98.5
-pay=1200
-```
-
-----------------------
-
-## References
+> References
 
 [1] http://c.biancheng.net/cpp/biancheng/view/244.html
 
