@@ -54,9 +54,21 @@
    source .bashrc       # refresh
    ```
 
-## 3. ToDo
+## 3. Git
 
+1. Terminal
 
+   ```bash
+   git checkout
+   git pull
+   git add -A
+   git commit -m "commit"
+   git push --all
+   ```
+
+## 4. Todo
+
+1. todo
 
 
 
@@ -66,11 +78,9 @@
 
 > References
 
-[1] http://c.biancheng.net/cpp/biancheng/view/244.html
+[1] 
 
-[2] https://blog.csdn.net/guoyong10721073/article/details/52414029
-
-----------------------
+[2] 
 
 [FATFOO](https://github.com/snowyben)
 
