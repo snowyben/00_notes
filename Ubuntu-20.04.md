@@ -4,7 +4,7 @@
 
 1. Terminal:
 
-   ```shell
+   ```bash
    sudo gedit /etc/apt/sources.list
    ```
 
