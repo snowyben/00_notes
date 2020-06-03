@@ -6,6 +6,7 @@
 
    ```Bash
    sudo gedit /etc/apt/sources.list
+   echo hahaha
    ```
 
 2. Copy:
