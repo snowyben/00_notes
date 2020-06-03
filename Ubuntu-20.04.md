@@ -66,11 +66,56 @@
    git push --all
    ```
 
-## 4. Todo
+## 4. Docker
 
-1. todo
+1. Curl
 
+   ```bash
+   $ sudo apt-get install libcurl4=7.65.3-1ubuntu3
+   $ sudo apt-get install curl
+   ```
 
+2. Dependencies
+
+   ```bash
+   $ sudo apt-get install \
+       apt-transport-https \
+       ca-certificates \
+       curl \
+       gnupg-agent \
+       software-properties-common
+   ```
+
+3. Key
+
+   ```bash
+   $ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+   ```
+
+4. Repoository
+
+   ```bash
+   $ sudo add-apt-repository \
+   "deb [arch=amd64] https://mirrors.aliyun.com/docker-ce/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+   ```
+
+5. Docker Engine
+
+   ```bash
+   $ sudo apt-get update
+   $ sudo apt-get install docker-ce docker-ce-cli containerd.io
+   ```
+
+6. Check
+
+   ```bash
+   $ apt-cach madison docker-ce
+   $ sudo docker run hello-world
+   ```
+
+   
 
 
 
