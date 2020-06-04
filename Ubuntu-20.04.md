@@ -124,7 +124,26 @@
    $ reboot
    ```
 
+## 5. Python
 
+1. pip
+
+   ```bash
+   python3 --version #check python3
+   sudo apt-get install python3-pip
+   pip3 --version #check pip3
+   ```
+
+2. alpine
+
+   ```bash
+   # for "no module named setuptools"
+   sudo apt-get install python3-pkg-resources=41.1.0-1
+   sudo apt-get install python3-setuptools
+   pip3 install alpine
+   ```
+
+   
 
 > References
 
