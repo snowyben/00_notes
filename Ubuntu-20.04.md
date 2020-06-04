@@ -143,11 +143,19 @@
    pip3 install alpine
    ```
 
+3. pycharm
+
+   ```bash
+   # download and install step by step from the official web site
+   # or you can refer [1] in chinese
+   sudo apt-get install python3-distutils # may not necessary
+   ```
+
    
 
 > References
 
-[1] 
+[1] https://www.jb51.net/article/185785.htm
 
 [2] 
 
