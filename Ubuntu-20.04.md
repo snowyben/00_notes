@@ -151,13 +151,23 @@
    sudo apt-get install python3-distutils # may not necessary
    ```
 
-4. anaconda
+4. anaconda&pytorch
 
    ```bash
    # download Anaconda3-2020.02-linux-x86_64.sh from the official website
    bash Anaconda3-2020.02-Linux-x86_64.sh
    # restart the terminal
    python3
+   # CPU only
+   conda install pytorch torchvision cpuonly -c pytorch
+   
+   # test
+   python3
+   from __future__ import print_function
+   import torch 
+   x = torch.rand(5,3)
+   print(x)
+   # output will be a 5*3 tensor
    ```
 
    
