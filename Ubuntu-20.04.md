@@ -146,12 +146,23 @@
 3. pycharm
 
    ```bash
-   # download and install step by step from the official web site
+   # download and install step by step from the official website
    # or you can refer [1] in chinese
    sudo apt-get install python3-distutils # may not necessary
    ```
 
+4. anaconda
+
+   ```bash
+   # download Anaconda3-2020.02-linux-x86_64.sh from the official website
+   bash Anaconda3-2020.02-Linux-x86_64.sh
+   # restart the terminal
+   python3
+   ```
+
    
+
+
 
 > References
 
